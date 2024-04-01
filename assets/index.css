@@ -19,8 +19,26 @@ html{font-size: 16px;}
     padding: 0 0.25rem;
     justify-content: center;
 }
+.tres div{
+    padding: 0.25rem;
+}
 .wrapper img{
     width: 85%;
     max-height: 700px;
     border-radius: 1.5rem;
+}
+.price{
+    text-align: right;
+}
+.feature{
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+.testimonials{
+    grid-template-columns: auto auto;
+}
+.logos{
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
 }
