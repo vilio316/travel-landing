@@ -1,5 +1,5 @@
 *{box-sizing: border-box;}
-html{font-size: 16px;}
+html{font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 .grid{
     display: grid;
 }
@@ -14,21 +14,38 @@ html{font-size: 16px;}
 .dos{
     grid-template-columns: 50% 50%;
 }
+.logo{
+    padding: 0.5rem 0.25rem;
+}
 .tres{
     grid-template-columns: auto auto auto;
     padding: 0 0.25rem;
-    justify-content: center;
 }
 .tres div{
     padding: 0.25rem;
 }
 .wrapper img{
     width: 85%;
-    max-height: 700px;
+    max-height: 25rem;
     border-radius: 1.5rem;
 }
+.buttons{
+    display: grid;
+    justify-content: right;
+    grid-template-columns: auto auto auto;
+    gap: 0.25rem;
+}
 .price{
-    text-align: right;
+    text-align: center;
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.footer_nav p{
+    color: purple;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 .feature{
     align-items: center;
@@ -41,4 +58,17 @@ html{font-size: 16px;}
     grid-template-columns: auto auto auto auto auto;
     align-items: center;
     justify-items: center;
+}
+.links{
+    font-weight: bold; font-size: 1.5rem; grid-template-columns: auto auto auto auto;
+}
+.links a{
+    padding: 0.25rem;
+}
+a:hover{
+    font-style: italic;
+    opacity: 0.7
+}
+.footer_nav a{
+    display: block
 }
