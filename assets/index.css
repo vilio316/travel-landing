@@ -48,6 +48,25 @@ h2{
 p.special{
     font-size: 3rem
 }
+#typewriter{
+    border-right: 3px solid blue;
+    overflow: hidden;
+    display: inline-flex;
+    letter-spacing: 0.2rem;
+    animation: typist 2s steps(30, end) infinite, border_blink 0.5s step-end infinite;
+}
+@keyframes typist{
+    from, to{
+        width: 0
+    }
+    50%{width: 10rem}
+}
+@keyframes border_blink{
+    from, to{border-color: transparent;}
+    50%{
+        border-color: blue;
+    }
+}
 .price{
     text-align: center;
     font-size: 1.5rem;
