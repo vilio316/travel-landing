@@ -12,7 +12,8 @@ html{font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucid
     grid-template-columns: 25% 25% 25% 25%;
 }
 .dos{
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% auto;
+    justify-items: center;
 }
 .logo{
     padding: 0.5rem 0.25rem;
@@ -21,8 +22,9 @@ html{font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucid
     grid-template-columns: auto auto auto;
     padding: 0 0.25rem;
 }
-.tres div{
+.tres > div{
     padding: 0.25rem;
+    border-radius: 1.5rem;
 }
 .wrapper img{
     width: 85%;
