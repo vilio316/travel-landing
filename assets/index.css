@@ -29,6 +29,7 @@ h2{
 .tres > div{
     padding: 0.25rem;
     border-radius: 1.5rem;
+    border: 0.125rem solid black;
 }
 .wrapper img{
     height: 25rem;
