@@ -1,7 +1,19 @@
 *{box-sizing: border-box;}
 html{font-size: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+body{
+    padding: 0.5rem 0
+}
 .grid{
     display: grid;
+}
+.yellow_button{
+    color: white;
+    text-transform: uppercase;
+    background-color: #f1a051;
+    padding: 0.5rem 0.25rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: bold;
 }
 .header{
     grid-template-columns: auto auto auto;
@@ -15,7 +27,7 @@ h2{
     grid-template-columns: 25% 25% 25% 25%;
 }
 .dos{
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% auto;
     align-items: center;
     justify-content: center;
 }
@@ -25,15 +37,18 @@ h2{
 .tres{
     grid-template-columns: auto auto auto;
     padding: 0 0.25rem;
+    gap: 1rem;
 }
 .tres > div{
-    padding: 0.25rem;
+    border: 1px solid black;
     border-radius: 1.5rem;
-    border: 0.125rem solid black;
+    border-top: none;
 }
 .wrapper img{
-    height: 25rem;
-    border-radius: 1.5rem;
+    width: 100%;
+    max-height: 30rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    justify-self: center;
 }
 .wrapp img{
     width: 50%;
@@ -47,7 +62,8 @@ h2{
     gap: 0.25rem;
 }
 p.special{
-    font-size: 3rem
+    font-size: 3rem;
+    margin: 1.5rem 0;
 }
 #typewriter{
     border-right: 3px solid blue;
@@ -74,6 +90,16 @@ p.special{
     color: green;
     font-weight: bold;
     font-family: sans-serif;
+}
+.tres p{
+    text-indent: 1.25rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.tres span{
+    text-indent: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem
 }
 .footer_nav p{
     color: #0e3264;
